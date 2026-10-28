@@ -8,7 +8,7 @@ if (!isset($_SESSION['id_pengguna'])) {
 }
 
 // 1. CONFIGURATION: GROQ API KEY & ENDPOINT
-$groq_api_key = getenv('GROQ_API_KEY') ?: 'YOUR_GROQ_API_KEY_HERE';
+$apiKey = getenv('GROQ_API_KEY') ?: 'YOUR_GROQ_API_KEY_HERE';
 $apiUrl = "https://api.groq.com/openai/v1/chat/completions";
 
 $rawInput = file_get_contents('php://input');
